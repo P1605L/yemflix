@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yem-Flix - Nonton Film Bioskop Terbaru</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="yem-logo">
+                <span>YEM</span>
+                <div class="flip-animation">FLIX</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="index.html" class="logo">
+                <span>YEM</span>FLIX
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link active">Beranda</a>
+            <a href="#movies" class="nav-link">Film</a>
+            <a href="#series" class="nav-link">Series</a>
+            <a href="#trending" class="nav-link">Trending</a>
+            <a href="#my-list" class="nav-link">Daftar Saya</a>
+        </div>
+        <div class="nav-right">
+            <div class="search-container">
+                <input type="text" placeholder="Cari film..." class="search-input">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="profile-dropdown">
+                <img src="images/profile.jpg" alt="Profile" class="profile-img">
+                <div class="dropdown-content">
+                    <a href="#account">Akun Saya</a>
+                    <a href="#settings">Pengaturan</a>
+                    <a href="#help">Bantuan</a>
+                    <a href="#logout">Keluar</a>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">NONTON <span>FILM BIOSKOP</span> TERBARU</h1>
+            <p class="hero-subtitle">Ayoo!!!! nonton stream tanpa batas di website kami temukan yang ingin kalian
+                tonton
+            </p>
+            <div class="hero-buttons">
+                <button class="btn-primary"><i class="fas fa-play"></i> Putar Sekarang</button>
+                <button class="btn-secondary"><i class="fas fa-info-circle"></i> Info Lebih Lanjut</button>
+            </div>
+        </div>
+        <div class="hero-slider">
+            <!-- Slides will be added dynamically via JS -->
+        </div>
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Movies Section -->
+    <section class="movies-section" id="movies">
+        <div class="section-header">
+            <h2>Film Terbaru</h2>
+            <div class="section-controls">
+                <button class="section-nav prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="section-nav next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="movies-container">
+            <!-- Movie cards will be added dynamically via JS -->
+        </div>
+    </section>
+
+    <!-- Series Section -->
+    <section class="series-section" id="series">
+        <div class="section-header">
+            <h2>Series Populer</h2>
+            <div class="section-controls">
+                <button class="section-nav prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="section-nav next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="series-container">
+            <!-- Series cards will be added dynamically via JS -->
+        </div>
+    </section>
+
+    <!-- Trending Section -->
+    <section class="trending-section" id="trending">
+        <div class="section-header">
+            <h2>Trending Minggu Ini</h2>
+            <div class="section-controls">
+                <button class="section-nav prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="section-nav next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="trending-container">
+            <!-- Trending items will be added dynamically via JS -->
+        </div>
+    </section>
+
+    <!-- My List Section -->
+    <section class="mylist-section" id="my-list">
+        <div class="section-header">
+            <h2>Daftar Saya</h2>
+        </div>
+        <div class="mylist-container">
+            <!-- User's list items will be added dynamically via JS -->
+        </div>
+    </section>
+
+    <!-- Video Player Modal -->
+    <div class="video-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="video-container">
+                <video controls id="main-video">
+                    <source src="" type="video/mp4">
+                    Browser Anda tidak mendukung video tag.
+                </video>
+            </div>
+            <div class="video-info">
+                <h3 class="video-title"></h3>
+                <div class="video-meta">
+                    <span class="video-year"></span>
+                    <span class="video-rating"></span>
+                    <span class="video-duration"></span>
+                </div>
+                <p class="video-description"></p>
+                <div class="video-actions">
+                    <button class="btn-primary"><i class="fas fa-play"></i> Lanjutkan Menonton</button>
+                    <button class="btn-secondary"><i class="fas fa-plus"></i> Tambahkan ke Daftar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html" class="logo">
+                    <span>YEM</span>FLIX
+                </a>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Perusahaan</h4>
+                    <a href="#about">Tentang Kami</a>
+                    <a href="#jobs">Karir</a>
+                    <a href="#contact">Kontak</a>
+                </div>
+                <div class="link-group">
+                    <h4>Bantuan</h4>
+                    <a href="#faq">FAQ</a>
+                    <a href="#support">Dukungan</a>
+                    <a href="#terms">Syarat & Ketentuan</a>
+                </div>
+                <div class="link-group">
+                    <h4>Sosial Media</h4>
+                    <a href="#facebook"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="#twitter"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#instagram"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Yem-Flix. Semua hak dilindungi.</p>
+            <div class="language-selector">
+                <i class="fas fa-globe"></i>
+                <select>
+                    <option value="id">Bahasa Indonesia</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
